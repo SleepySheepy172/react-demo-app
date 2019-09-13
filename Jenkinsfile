@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "mskhirwar/react-app-demo"
+    registry = "ecogden/pipeline"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/mskhirwar/react-demo-app.git'
+        git 'https://github.com/SleepySheepy172/react-demo-app.git'
       }
     }
      stage('Install dependencies') {
